@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/pico.classless.min.css">
+    <title>MovieDB</title>
+  </head>
+  <style>
+	html {
+		font-family: Consolas;
+	}
+	h1 {
+		text-align: center;
+	}
+	h2 {
+		margin: 0;
+	}
+	h6, p {
+		margin: 0.5rem 0;
+	}
+	#type {
+		text-transform: capitalize;
+	}
+  </style>
+  <body>
+    <main class="container">
+		<h1>MOVIE DATABASE</h1>
+		<input type="search" id="search" name="search" placeholder="Enter a movie name">
+		<button id="btn" onclick="getMovies()">Search</button>
+		<div id="info"></div>
+	</main>
+  </body>
+  <script src="assets/app.js"></script>
+</html>
